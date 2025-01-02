@@ -1,0 +1,157 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+/* Navigation Bar */
+.navbar {
+    background: #333;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.navbar ul li {
+    display: inline;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+.navbar ul li a:hover {
+    color: #4caf50;
+}
+.hero {
+    height: 60vh;
+    background: url('https://cdn.pixabay.com/photo/2016/08/24/16/20/books-1617327_960_720.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(154, 27, 27);
+    position: relative;
+    overflow: hidden;
+}
+.hero h1 {
+    /* background-color: rgb(0, 0, 0); */
+    border-radius: 1rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 2s ease-in-out;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 2.5s ease-in-out;
+}
+.hero button {
+    background: white;
+    margin-left: 2rem;
+    margin-bottom: 0.9rem;
+    color: #4caf50;
+    border: none;
+    padding: 0.75rem 1.5rem ;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+    animation: fadeIn 3s ease-in-out;
+}
+.hero button:hover {
+    background: #4caf50;
+    color: white;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+.products {
+    padding: 2rem;
+    text-align: center;
+}
+.products h2 {
+    margin-bottom: 1.5rem;
+}
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 300px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    perspective: 1000px;
+}
+.product:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.product img {
+    max-width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+.product h3 {
+    margin-bottom: 0.5rem;
+}
+.product p {
+    margin-bottom: 1rem;
+}
+.product button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.product button:hover {
+    background: #45a049;
+}
+.footer {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.footer .social-icons {
+    margin-top: 1rem;
+}
+.footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+.footer .social-icons a:hover {
+    transform: scale(1.2);
+    color: #4caf50;
+}
